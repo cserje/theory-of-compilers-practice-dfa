@@ -78,11 +78,13 @@ class StateMachine {
   };
 
   isDot = (char) => {
-    return char === ".";
+    const charCode = `${char}`.charCodeAt(0);
+    return charCode === 46;
   };
 
   isAt = (char) => {
-    return char === "@";
+    const charCode = `${char}`.charCodeAt(0);
+    return charCode === 64;
   };
 
   transition(char) {
