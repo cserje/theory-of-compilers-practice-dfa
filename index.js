@@ -1,9 +1,12 @@
 import assert from "assert";
 
 class StateMachine {
+  
   constructor() {
     this.state = "A";
+    this.finalStates = ["H", "J"];
   }
+  
   transitions = {
     A: {
       0: "B",
@@ -106,7 +109,7 @@ class StateMachine {
   }
 
   isFinal() {
-    return this.state === "H" || this.state === "J";
+    return this.finalStates.includes(this.state);
   }
 }
 
@@ -126,14 +129,14 @@ const isValidEmail = (input) => {
   }
 };
 
-// Helyes e-mail címek
+// Valid e-mail addresses
 assert.strictEqual(isValidEmail("cserjesi.kristof.jeno@hallgato.sze.hu"), true);
 assert.strictEqual(isValidEmail("teszt.elek@sze.hu"), true);
 assert.strictEqual(isValidEmail("r0ka@koma.hu"), true);
 assert.strictEqual(isValidEmail("roka@k0ma.hu"), true);
 assert.strictEqual(isValidEmail("info@r0ka.k0ma.hu"), true);
 
-// Helytelen e-mail címek
+// Invalid e-mail addresses
 assert.strictEqual(isValidEmail("localhost"), false);
 assert.strictEqual(isValidEmail("teszt.elek.hu"), false);
 assert.strictEqual(isValidEmail("ab"), false);
