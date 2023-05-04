@@ -16,7 +16,7 @@ private:
     return (int)c >= 48 && (int)c <= 57;
   };
 
-  bool isAlphabetical(char c)
+  bool isAlphabetLetter(char c)
   {
     return (int)c >= 97 && (int)c <= 122;
   };
@@ -36,7 +36,7 @@ private:
     {
       state = 'B';
     }
-    else if (isAlphabetical(c))
+    else if (isAlphabetLetter(c))
     {
       state = 'C';
     }
@@ -59,7 +59,7 @@ private:
     {
       state = 'B';
     }
-    else if (isAlphabetical(c))
+    else if (isAlphabetLetter(c))
     {
       state = 'C';
     }
@@ -82,7 +82,7 @@ private:
     {
       state = 'B';
     }
-    else if (isAlphabetical(c))
+    else if (isAlphabetLetter(c))
     {
       state = 'C';
     }
@@ -105,7 +105,7 @@ private:
     {
       state = 'B';
     }
-    else if (isAlphabetical(c))
+    else if (isAlphabetLetter(c))
     {
       state = 'C';
     }
@@ -128,7 +128,7 @@ private:
     {
       state = 'F';
     }
-    else if (isAlphabetical(c))
+    else if (isAlphabetLetter(c))
     {
       state = 'G';
     }
@@ -151,7 +151,7 @@ private:
     {
       state = 'F';
     }
-    else if (isAlphabetical(c))
+    else if (isAlphabetLetter(c))
     {
       state = 'G';
     }
@@ -174,7 +174,7 @@ private:
     {
       state = 'F';
     }
-    else if (isAlphabetical(c))
+    else if (isAlphabetLetter(c))
     {
       state = 'G';
     }
@@ -197,7 +197,7 @@ private:
     {
       state = 'F';
     }
-    else if (isAlphabetical(c))
+    else if (isAlphabetLetter(c))
     {
       state = 'J';
     }
@@ -220,7 +220,7 @@ private:
     {
       state = 'I';
     }
-    else if (isAlphabetical(c))
+    else if (isAlphabetLetter(c))
     {
       state = 'I';
     }
@@ -243,7 +243,7 @@ private:
     {
       state = 'F';
     }
-    else if (isAlphabetical(c))
+    else if (isAlphabetLetter(c))
     {
       state = 'J';
     }
