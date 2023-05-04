@@ -470,4 +470,34 @@ Output:
     F --m--> G
     G --a--> G
     Not accepted.
+
+Input:
+  kicsit.sok.a@kukac@kuk.ac
+Output:  
+  A --k--> C
+  C --i--> C
+  C --c--> C
+  C --s--> C
+  C --i--> C
+  C --t--> C
+  C --.--> D
+  D --s--> C
+  C --o--> C
+  C --k--> C
+  C --.--> D
+  D --a--> C
+  C --@--> E
+  E --k--> G
+  G --u--> G
+  G --k--> G
+  G --a--> G
+  G --c--> G
+  G --@--> I
+  I --k--> I
+  I --u--> I
+  I --k--> I
+  I --.--> I
+  I --a--> I
+  I --c--> I
+  Not accepted.
 */
